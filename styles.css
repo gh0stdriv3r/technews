@@ -4,22 +4,20 @@
     padding: 0;
 }
 body{
-    background-color: #000;
-    color: #fff;
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236fe638' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #000;
+    background-color: #fff;
     font-size: 16px;
     font-family: 'Figtree', sans-serif;;
 }
 a {
-    color: #fff;
+    color: #000;
     text-decoration: none; 
 }
 ul{
     list-style: none;
 }
 .contenedor {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .nav-main{
@@ -31,7 +29,8 @@ ul{
     padding: 20px 0;  
 }
 .nav-brand{
-    width: 50px;
+    width: 60px;
+    cursor: pointer;
 }
 
 /*Navegación izquierda*/
@@ -73,11 +72,10 @@ hr{
     background-color: green;
     background: url('./img/showcase2.jpg') no-repeat center center/cover;
     padding: 50px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:flex-end;
+    justify-content:center;
 }
 .showcase h2,
 .showcase p{
@@ -131,10 +129,11 @@ hr{
 .cards-banner-one{
     width:100%;
     height: 350px;
-    background: url('./img/tech-red.jpg');
-    margin-bottom: 40px;
+    background: url('./img/nosotros.jpg') no-repeat center center/cover;
+    
 }
 .cards-banner-one .content{
+    color: #FFF;
     width: 40%;
     padding: 90px 0 0 30px;
 }
@@ -147,10 +146,26 @@ hr{
 .cards-banner-two{
     width: 100%;
     height: 350px;
-    background: url('./img/image-five.jpg') no-repeat center center/cover;
+    background: url('./img/transportecamion.jpg') no-repeat center center/cover;
+    
 }
 .cards-banner-two .content{
-    width: 50%;
+    color: #FFF;
+    width: 100%;
+    padding: 90px 30px;
+    text-align: end;
+}
+
+/*TARJETA BANNER 3*/
+.cards-banner-three{
+    width:100%;
+    height: 350px;
+    background: url('./img/logistica.jpg') no-repeat center center/cover;
+    
+}
+.cards-banner-three .content{
+    color: #FFF;
+    width: 40%;
     padding: 100px 0 0 30px;
 }
 
@@ -195,11 +210,15 @@ hr{
 .footer-container ul li{
     line-height: 2.8;
 }
+.footer-container ul li h3{
+    line-height: 2.8;
+    color: #FFF;
+}
 
 /*FOOTER*/
 .footer{
     background: #2f3640;
-    color: 616161;
+    color: #FFF;
     font-size: 12px;
     padding: 20px 0;
     text-align: center;
@@ -217,7 +236,7 @@ hr{
         position: absolute;
         top: 0;
         left: 0;
-        background: #2f3640;
+        background: #ffffff;
         height: 100%;
         padding: 30px;
         opacity: .9;
